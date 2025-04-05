@@ -1,0 +1,67 @@
+[1;36mCOLLEGE TIMETABLE (COLUMN-WISE)
+============================================================[0m
+
+Start Time: 09:00
+Lunch Time: 13:00 (60 mins)
+
+[1;36mSTREAM: cse - SECTION A[0m
+[0;34m============================================================[0m
+
+[1;36mTIME          [0;34m| [1;36mMONDAY                       [0;34m| [1;36mTUESDAY                      [0;34m| [1;36mWEDNESDAY                    [0;34m| [1;36mTHURSDAY                     [0;34m| [1;36mFRIDAY                       [0m
+[0;34m              +-----------------------------+-----------------------------+-----------------------------+-----------------------------+-----------------------------[0m
+09:00-09:55   [0;34m| [0;32me (d) - Room 100             [0m[0;34m| [0;32mw (s) - Room 101             [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;32mw (s) - Room 107             [0m[0;34m| [0;37mFREE PERIOD                  [0m
+10:00-10:55   [0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;32me (d) - Room 106             [0m[0;34m| [0;32mq (a) - Room 107             [0m[0;34m| [0;37mFREE PERIOD                  [0m
+11:00-11:55   [0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;32mr (f) - Room 102             [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m
+12:00-12:55   [0;34m| [0;32mr (f) - Room 100             [0m[0;34m| [0;32me (d) - Room 107             [0m[0;34m| [0;32mq (a) - Room 102             [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;32mw (s) - Room 109             [0m
+13:00-14:00   [0;34m| [0;33mLUNCH BREAK                  [0;34m| [0;33mLUNCH BREAK                  [0;34m| [0;33mLUNCH BREAK                  [0;34m| [0;33mLUNCH BREAK                  [0;34m| [0;33mLUNCH BREAK                  [0m
+14:00-14:55   [0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;32mr (f) - Room 101             [0m[0;34m| [0;32mq (a) - Room 102             [0m
+
+
+[1;36mSTREAM: cse - SECTION B[0m
+[0;34m============================================================[0m
+
+[1;36mTIME          [0;34m| [1;36mMONDAY                       [0;34m| [1;36mTUESDAY                      [0;34m| [1;36mWEDNESDAY                    [0;34m| [1;36mTHURSDAY                     [0;34m| [1;36mFRIDAY                       [0m
+[0;34m              +-----------------------------+-----------------------------+-----------------------------+-----------------------------+-----------------------------[0m
+09:00-09:55   [0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;32mq (a) - Room 102             [0m[0;34m| [0;32me (d) - Room 100             [0m[0;34m| [0;37mFREE PERIOD                  [0m
+10:00-10:55   [0;34m| [0;32mr (f) - Room 105             [0m[0;34m| [0;32mr (f) - Room 109             [0m[0;34m| [0;32mw (s) - Room 105             [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;32mw (s) - Room 101             [0m
+11:00-11:55   [0;34m| [0;32mq (a) - Room 103             [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m
+12:00-12:55   [0;34m| [0;32mw (s) - Room 107             [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;32mq (a) - Room 107             [0m
+13:00-14:00   [0;34m| [0;33mLUNCH BREAK                  [0;34m| [0;33mLUNCH BREAK                  [0;34m| [0;33mLUNCH BREAK                  [0;34m| [0;33mLUNCH BREAK                  [0;34m| [0;33mLUNCH BREAK                  [0m
+14:00-14:55   [0;34m| [0;32me (d) - Room 100             [0m[0;34m| [0;32me (d) - Room 101             [0m[0;34m| [0;32mr (f) - Room 102             [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m
+
+
+[1;36mSTREAM: ece - SECTION A[0m
+[0;34m============================================================[0m
+
+[1;36mTIME          [0;34m| [1;36mMONDAY                       [0;34m| [1;36mTUESDAY                      [0;34m| [1;36mWEDNESDAY                    [0;34m| [1;36mTHURSDAY                     [0;34m| [1;36mFRIDAY                       [0m
+[0;34m              +-----------------------------+-----------------------------+-----------------------------+-----------------------------+-----------------------------[0m
+09:00-09:55   [0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m
+10:00-10:55   [0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;32mo (k) - Room 102             [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;32mo (k) - Room 101             [0m[0;34m| [0;32mo (k) - Room 105             [0m
+11:00-11:55   [0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;32mp (l) - Room 101             [0m[0;34m| [0;32mp (l) - Room 104             [0m[0;34m| [0;32mi (j) - Room 106             [0m
+12:00-12:55   [0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;32mi (j) - Room 106             [0m[0;34m| [0;32mp (l) - Room 101             [0m
+13:00-14:00   [0;34m| [0;33mLUNCH BREAK                  [0;34m| [0;33mLUNCH BREAK                  [0;34m| [0;33mLUNCH BREAK                  [0;34m| [0;33mLUNCH BREAK                  [0;34m| [0;33mLUNCH BREAK                  [0m
+14:00-14:55   [0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;32mi (j) - Room 108             [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m
+
+
+[1;36mSTREAM: ece - SECTION B[0m
+[0;34m============================================================[0m
+
+[1;36mTIME          [0;34m| [1;36mMONDAY                       [0;34m| [1;36mTUESDAY                      [0;34m| [1;36mWEDNESDAY                    [0;34m| [1;36mTHURSDAY                     [0;34m| [1;36mFRIDAY                       [0m
+[0;34m              +-----------------------------+-----------------------------+-----------------------------+-----------------------------+-----------------------------[0m
+09:00-09:55   [0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;32mo (k) - Room 106             [0m
+10:00-10:55   [0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m
+11:00-11:55   [0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;32mp (l) - Room 104             [0m[0;34m| [0;32mi (j) - Room 108             [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m
+12:00-12:55   [0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;32mo (k) - Room 105             [0m[0;34m| [0;32mo (k) - Room 106             [0m[0;34m| [0;32mp (l) - Room 109             [0m[0;34m| [0;32mi (j) - Room 105             [0m
+13:00-14:00   [0;34m| [0;33mLUNCH BREAK                  [0;34m| [0;33mLUNCH BREAK                  [0;34m| [0;33mLUNCH BREAK                  [0;34m| [0;33mLUNCH BREAK                  [0;34m| [0;33mLUNCH BREAK                  [0m
+14:00-14:55   [0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;37mFREE PERIOD                  [0m[0;34m| [0;32mi (j) - Room 102             [0m[0;34m| [0;32mp (l) - Room 101             [0m
+
+
+
+LEGEND:
+-------
+[0;32mRegular Classes[0m
+[0;37mFree Periods[0m
+[0;33mLunch Break[0m
+
+Format: Subject (Teacher) - Room
+

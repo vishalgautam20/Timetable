@@ -1,0 +1,87 @@
+TEACHER TIMETABLES
+============================================================
+
+TEACHER: a
+------------------------------------------------------------
+DAY            TIME                ROOM           CLASS
+------------------------------------------------------------
+WEDNESDAY      12:00-12:55         Room 102       cse Sec A
+THURSDAY       10:00-10:55         Room 107       cse Sec A
+FRIDAY         14:00-14:55         Room 102       cse Sec A
+MONDAY         11:00-11:55         Room 103       cse Sec B
+WEDNESDAY      09:00-09:55         Room 102       cse Sec B
+FRIDAY         12:00-12:55         Room 107       cse Sec B
+
+
+TEACHER: d
+------------------------------------------------------------
+DAY            TIME                ROOM           CLASS
+------------------------------------------------------------
+MONDAY         09:00-09:55         Room 100       cse Sec A
+TUESDAY        12:00-12:55         Room 107       cse Sec A
+WEDNESDAY      10:00-10:55         Room 106       cse Sec A
+MONDAY         14:00-14:55         Room 100       cse Sec B
+TUESDAY        14:00-14:55         Room 101       cse Sec B
+THURSDAY       09:00-09:55         Room 100       cse Sec B
+
+
+TEACHER: f
+------------------------------------------------------------
+DAY            TIME                ROOM           CLASS
+------------------------------------------------------------
+MONDAY         12:00-12:55         Room 100       cse Sec A
+TUESDAY        11:00-11:55         Room 102       cse Sec A
+THURSDAY       14:00-14:55         Room 101       cse Sec A
+MONDAY         10:00-10:55         Room 105       cse Sec B
+TUESDAY        10:00-10:55         Room 109       cse Sec B
+WEDNESDAY      14:00-14:55         Room 102       cse Sec B
+
+
+TEACHER: j
+------------------------------------------------------------
+DAY            TIME                ROOM           CLASS
+------------------------------------------------------------
+WEDNESDAY      14:00-14:55         Room 108       ece Sec A
+THURSDAY       12:00-12:55         Room 106       ece Sec A
+FRIDAY         11:00-11:55         Room 106       ece Sec A
+WEDNESDAY      11:00-11:55         Room 108       ece Sec B
+THURSDAY       14:00-14:55         Room 102       ece Sec B
+FRIDAY         12:00-12:55         Room 105       ece Sec B
+
+
+TEACHER: k
+------------------------------------------------------------
+DAY            TIME                ROOM           CLASS
+------------------------------------------------------------
+TUESDAY        10:00-10:55         Room 102       ece Sec A
+THURSDAY       10:00-10:55         Room 101       ece Sec A
+FRIDAY         10:00-10:55         Room 105       ece Sec A
+TUESDAY        12:00-12:55         Room 105       ece Sec B
+WEDNESDAY      12:00-12:55         Room 106       ece Sec B
+FRIDAY         09:00-09:55         Room 106       ece Sec B
+
+
+TEACHER: l
+------------------------------------------------------------
+DAY            TIME                ROOM           CLASS
+------------------------------------------------------------
+WEDNESDAY      11:00-11:55         Room 101       ece Sec A
+THURSDAY       11:00-11:55         Room 104       ece Sec A
+FRIDAY         12:00-12:55         Room 101       ece Sec A
+TUESDAY        11:00-11:55         Room 104       ece Sec B
+THURSDAY       12:00-12:55         Room 109       ece Sec B
+FRIDAY         14:00-14:55         Room 101       ece Sec B
+
+
+TEACHER: s
+------------------------------------------------------------
+DAY            TIME                ROOM           CLASS
+------------------------------------------------------------
+TUESDAY        09:00-09:55         Room 101       cse Sec A
+THURSDAY       09:00-09:55         Room 107       cse Sec A
+FRIDAY         12:00-12:55         Room 109       cse Sec A
+MONDAY         12:00-12:55         Room 107       cse Sec B
+WEDNESDAY      10:00-10:55         Room 105       cse Sec B
+FRIDAY         10:00-10:55         Room 101       cse Sec B
+
+
