@@ -208,5 +208,12 @@ void TimetableGenerator::get_lunch_configuration() {
 void TimetableGenerator::handle_invalid_input() {
     cin.clear();
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
-    cout << "Invalid input. Please try again.\n";
+    cout << "Invalid input. Would you like to continue? (y/n): ";
+    char response;
+    cin >> response;
+    if (tolower(response) != 'y') {
+        cout << "Exiting program...\n";
+        exit(0);
+    }
+    cin.ignore();
 }

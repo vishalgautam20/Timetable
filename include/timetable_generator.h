@@ -66,6 +66,8 @@ private:
     string format_time_range(int start_time, int current_slot);  // Added current_slot parameter
     string format_class_entry(const Timetable &tt, int day, int slot, int stream);
     string center_text(const string& text, int width);
+    void save_individual_section_timetables();  // Add this declaration
+    void print_section_timetable(ofstream& file, size_t stream, int section);
 
 public:
     void run();

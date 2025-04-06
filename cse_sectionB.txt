@@ -1,0 +1,21 @@
+COLLEGE TIMETABLE
+================
+
+Stream: cse
+Section: B
+
+Start Time: 09:00
+Lunch Time: 13:00 (60 mins)
+
+TIME          | MONDAY                      | TUESDAY                     | WEDNESDAY                   | THURSDAY                    | FRIDAY                      
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+09:00-09:55   | w (s) - Room 3              | FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 
+10:00-10:55   | FREE PERIOD                 | e (d) - Room 6              | awf (LAB) - awfr            | e (d) - Room 4              | e (d) - Room 10             
+11:00-11:55   | FREE PERIOD                 | q (a) - Room 4              | awf (LAB) - awfr            | q (a) - Room 8              | w (s) - Room 2              
+12:00-12:55   | q (a) - Room 9              | w (s) - Room 8              | awf (LAB) - awfr            | FREE PERIOD                 | FREE PERIOD                 
+
+LEGEND:
+-------
+- Regular Classes: Subject (Teacher) - Room
+- Free Periods
+- Lunch Break

@@ -1,28 +1,8 @@
 #include "../include/timetable_generator.h"
 #include <fstream>
+#include <iostream>  // Add this line
 #include <iomanip>
 #include <sstream>
-
-// Add these color definitions at the top
-const string RESET = "\033[0m";
-const string HEADER_COLOR = "\033[1;36m";  // Cyan
-const string FREE_COLOR = "\033[0;37m";    // Gray
-const string CLASS_COLOR = "\033[0;32m";   // Green
-const string LUNCH_COLOR = "\033[0;33m";   // Yellow
-const string BORDER_COLOR = "\033[0;34m";  // Blue
-
-// Add these constants for box drawing
-const string BOX_HORIZONTAL = "─";
-const string BOX_VERTICAL = "│";
-const string BOX_TOP_LEFT = "┌";
-const string BOX_TOP_RIGHT = "┐";
-const string BOX_BOTTOM_LEFT = "└";
-const string BOX_BOTTOM_RIGHT = "┘";
-const string BOX_T_DOWN = "┬";
-const string BOX_T_UP = "┴";
-const string BOX_T_RIGHT = "├";
-const string BOX_T_LEFT = "┤";
-const string BOX_CROSS = "┼";
 
 using namespace std;
 
@@ -32,7 +12,9 @@ void TimetableGenerator::save_to_csv_column_wise() {
         throw runtime_error("Could not open CSV file for writing");
     }
 
-    file << "Institution Type,College\n";
+    // Basic header information
+    file << "COLLEGE TIMETABLE\n\n";
+    file << "Basic Information,\n";
     file << "Start Time," << format_time(start_hour * 60) << "\n";
     file << "Lunch Time," << format_time(lunch_break_time) << "\n";
     file << "Lunch Duration," << lunch_break_duration << " minutes\n\n";
@@ -42,73 +24,75 @@ void TimetableGenerator::save_to_csv_column_wise() {
             const Timetable &tt = timetables[stream][section];
             char sec_char = 'A' + section;
 
-            file << "Stream:," << stream_names[stream] << "\n";
-            file << "Section:," << sec_char << "\n\n";
+            // Stream and section header
+            file << stream_names[stream] << " - Section " << sec_char << "\n\n";
 
-            file << "Time Slot,";
-            for (size_t day = 0; day < DAY_NAMES.size(); day++) {
-                file << DAY_NAMES[day] << ",";
-                if (day < DAY_NAMES.size() - 1) file << ",";
+            // Simple column headers
+            file << "Time,";
+            for (const string& day : DAY_NAMES) {
+                file << day << ",";
             }
             file << "\n";
 
-            file << ",";
-            for (size_t day = 0; day < DAY_NAMES.size(); day++) {
-                file << "Subject,Teacher,Room,";
-                if (day < DAY_NAMES.size() - 1) file << ",";
-            }
-            file << "\n";
-
+            // Timetable content
             int current_time = start_hour * 60;
             for (int slot = 0; slot < total_teaching_slots; slot++) {
+                // Handle lunch break
                 if (slot == lunch_break_slot) {
                     file << format_time(lunch_break_time) << "-" 
                          << format_time(lunch_break_time + lunch_break_duration) << ",";
                     for (size_t day = 0; day < DAY_NAMES.size(); day++) {
-                        file << "LUNCH BREAK,,,";
-                        if (day < DAY_NAMES.size() - 1) file << ",";
+                        file << "LUNCH BREAK,";
                     }
                     file << "\n";
                     current_time = lunch_break_time + lunch_break_duration;
                     continue;
                 }
 
+                // Regular time slots
                 int end_time = current_time + slot_durations[slot];
                 file << format_time(current_time) << "-" << format_time(end_time) << ",";
 
+                // Print each day's classes
                 for (size_t day = 0; day < DAY_NAMES.size(); day++) {
                     if (tt.subject_id[day][slot] == -3) {
-                        file << "\"" << find_lab_name(stream, day) << "\","
-                             << "\"" << tt.teacher[day][slot] << "\","
-                             << "\"" << tt.room[day][slot] << "\",";
+                        // Lab session
+                        file << find_lab_name(stream, day) << " [" 
+                             << tt.teacher[day][slot] << "] " 
+                             << tt.room[day][slot] << ",";
                     } else if (tt.subject_id[day][slot] == -1) {
-                        file << "FREE,,,";
+                        file << "FREE,";
                     } else {
+                        // Regular class
                         int subj_idx = tt.subject_id[day][slot];
-                        file << "\"" << subjects[stream][subj_idx].name << "\","
-                             << "\"" << subjects[stream][subj_idx].teacher << "\","
-                             << "\"" << tt.room[day][slot] << "\",";
+                        file << subjects[stream][subj_idx].name << " ["
+                             << subjects[stream][subj_idx].teacher << "] "
+                             << tt.room[day][slot] << ",";
                     }
-
-                    if (day < DAY_NAMES.size() - 1) file << ",";
                 }
                 file << "\n";
                 current_time = end_time + break_duration;
             }
             file << "\n\n";
         }
+        file << "\n";
     }
+
+    // Simple legend
+    file << "Notes:\n";
+    file << "- Format: Subject [Teacher] Room\n";
+    file << "- FREE: No class scheduled\n";
+    file << "- LUNCH BREAK: Lunch period\n";
 }
 
-// Modify the save_to_txt_column_wise() function
 void TimetableGenerator::save_to_txt_column_wise() {
     ofstream file("timetables_column_wise.txt");
     if (!file) {
         throw runtime_error("Could not open TXT file for writing");
     }
 
-    file << HEADER_COLOR << "COLLEGE TIMETABLE (COLUMN-WISE)\n";
-    file << string(60, '=') << RESET << "\n\n";
+    file << "COLLEGE TIMETABLE\n";
+    file << "================\n\n";
     file << "Start Time: " << format_time(start_hour * 60) << "\n";
     file << "Lunch Time: " << format_time(lunch_break_time) << " (" << lunch_break_duration << " mins)\n\n";
 
@@ -117,44 +101,36 @@ void TimetableGenerator::save_to_txt_column_wise() {
             const Timetable &tt = timetables[stream][section];
             char sec_char = 'A' + section;
 
-            file << HEADER_COLOR << "STREAM: " << stream_names[stream];
-            file << " - SECTION " << sec_char << RESET << "\n";
-            file << BORDER_COLOR << string(60, '=') << RESET << "\n\n";
+            file << "STREAM: " << stream_names[stream];
+            file << " - SECTION " << sec_char << "\n";
+            file << string(60, '=') << "\n\n";
 
             const int time_width = 14;
             const int day_width = 30;
 
-            file << HEADER_COLOR << left << setw(time_width) << "TIME";
-            for (size_t day = 0; day < DAY_NAMES.size(); day++) {
-                file << BORDER_COLOR << "| " << HEADER_COLOR 
-                     << left << setw(day_width - 2) << DAY_NAMES[day] << " ";
+            // Column headers
+            file << left << setw(time_width) << "TIME";
+            for (const string& day : DAY_NAMES) {
+                file << "| " << left << setw(day_width - 2) << day;
             }
-            file << RESET << "\n";
-
-            file << BORDER_COLOR;
-            file << string(time_width, ' ');
-            for (size_t day = 0; day < DAY_NAMES.size(); day++) {
-                file << "+" << string(day_width - 1, '-');
-            }
-            file << RESET << "\n";
+            file << "\n" << string(time_width + (day_width * DAY_NAMES.size()), '-') << "\n";
 
             int current_time = start_hour * 60;
             for (int slot = 0; slot < total_teaching_slots; slot++) {
                 if (slot == lunch_break_slot) {
-                    file << left << setw(time_width) 
-                         << (format_time(lunch_break_time) + "-" + format_time(lunch_break_time + lunch_break_duration));
+                    string lunch_time = format_time(lunch_break_time) + "-" + 
+                                      format_time(lunch_break_time + lunch_break_duration);
+                    file << left << setw(time_width) << lunch_time;
                     for (size_t day = 0; day < DAY_NAMES.size(); day++) {
-                        file << BORDER_COLOR << "| " << LUNCH_COLOR 
-                             << left << setw(day_width - 2) << "LUNCH BREAK" << " ";
+                        file << "| " << left << setw(day_width - 2) << "LUNCH BREAK";
                     }
-                    file << RESET << "\n";
+                    file << "\n";
                     current_time = lunch_break_time + lunch_break_duration;
                     continue;
                 }
 
                 int end_time = current_time + slot_durations[slot];
-                file << left << setw(time_width) 
-                     << format_time_range(current_time, slot);  // Pass slot as parameter
+                file << left << setw(time_width) << format_time_range(current_time, slot);
 
                 for (size_t day = 0; day < DAY_NAMES.size(); day++) {
                     string entry;
@@ -165,17 +141,10 @@ void TimetableGenerator::save_to_txt_column_wise() {
                     } else {
                         int subj_idx = tt.subject_id[day][slot];
                         entry = subjects[stream][subj_idx].name + " (" + 
-                                subjects[stream][subj_idx].teacher + ") - " +
-                                tt.room[day][slot];
+                               subjects[stream][subj_idx].teacher + ") - " +
+                               tt.room[day][slot];
                     }
-                    file << BORDER_COLOR << "| ";
-                    if (tt.subject_id[day][slot] == -1) {
-                        file << FREE_COLOR << left << setw(day_width - 2) << "FREE PERIOD";
-                    } else {
-                        file << CLASS_COLOR << left << setw(day_width - 2) 
-                             << entry;
-                    }
-                    file << " " << RESET;
+                    file << "| " << left << setw(day_width - 2) << entry;
                 }
                 file << "\n";
                 current_time = end_time + break_duration;
@@ -183,7 +152,12 @@ void TimetableGenerator::save_to_txt_column_wise() {
             file << "\n\n";
         }
     }
-    print_legend(file);
+
+    file << "\nLEGEND:\n";
+    file << "-------\n";
+    file << "- Regular Classes: Subject (Teacher) - Room\n";
+    file << "- Free Periods\n";
+    file << "- Lunch Break\n\n";
 }
 
 void TimetableGenerator::generate_teacher_timetables() {
@@ -256,6 +230,42 @@ void TimetableGenerator::generate_teacher_timetables() {
     }
 }
 
+// Add new function to save individual section timetables
+void TimetableGenerator::save_individual_section_timetables() {
+    for (size_t stream = 0; stream < stream_names.size(); stream++) {
+        for (int section = 0; section < sections_per_stream[stream]; section++) {
+            // Create filename like "cse_sectionA.txt"
+            string filename = stream_names[stream] + "_section" + 
+                            static_cast<char>('A' + section) + ".txt";
+            
+            ofstream file(filename);
+            if (!file) {
+                throw runtime_error("Could not open file: " + filename);
+            }
+
+            file << "COLLEGE TIMETABLE\n";
+            file << "================\n\n";
+            file << "Stream: " << stream_names[stream] << "\n";
+            file << "Section: " << static_cast<char>('A' + section) << "\n\n";
+            file << "Start Time: " << format_time(start_hour * 60) << "\n";
+            file << "Lunch Time: " << format_time(lunch_break_time) 
+                 << " (" << lunch_break_duration << " mins)\n\n";
+
+            print_section_timetable(file, stream, section);
+            
+            file << "\nLEGEND:\n";
+            file << "-------\n";
+            file << "- Regular Classes: Subject (Teacher) - Room\n";
+            file << "- Free Periods\n";
+            file << "- Lunch Break\n";
+            
+            cout << "Created timetable for " << stream_names[stream] 
+                 << " Section " << static_cast<char>('A' + section) 
+                 << " in " << filename << "\n";
+        }
+    }
+}
+
 // Update the format_time_range function to accept current_slot parameter
 string TimetableGenerator::format_time_range(int start_time, int current_slot) {
     int end_time = start_time + slot_durations[current_slot];
@@ -284,9 +294,9 @@ string TimetableGenerator::center_text(const string& text, int width) {
 void TimetableGenerator::print_legend(ofstream& file) {
     file << "\nLEGEND:\n";
     file << "-------\n";
-    file << CLASS_COLOR << "Regular Classes" << RESET << "\n";
-    file << FREE_COLOR << "Free Periods" << RESET << "\n";
-    file << LUNCH_COLOR << "Lunch Break" << RESET << "\n";
+    file << "Regular Classes\n";
+    file << "Free Periods\n";
+    file << "Lunch Break\n";
     file << "\nFormat: Subject (Teacher) - Room\n\n";
 }
 
@@ -313,5 +323,57 @@ void TimetableGenerator::print_summary(ofstream& file, const Timetable& tt) {
     file << "\nRoom Utilization:\n";
     for (const auto& [room, usage] : room_usage) {
         file << room << ": " << usage << " slots\n";
+    }
+}
+
+void TimetableGenerator::print_section_timetable(ofstream& file, size_t stream, int section) {
+    const Timetable &tt = timetables[stream][section];
+    
+    const int time_width = 14;
+    const int day_width = 30;
+
+    // Print column headers
+    file << left << setw(time_width) << "TIME";
+    for (const string& day : DAY_NAMES) {
+        file << "| " << left << setw(day_width - 2) << day;
+    }
+    file << "\n" << string(time_width + (day_width * DAY_NAMES.size()), '-') << "\n";
+
+    // Print timetable content
+    int current_time = start_hour * 60;
+    for (int slot = 0; slot < total_teaching_slots; slot++) {
+        if (slot == lunch_break_slot) {
+            string lunch_time = format_time(lunch_break_time) + "-" + 
+                              format_time(lunch_break_time + lunch_break_duration);
+            file << left << setw(time_width) << lunch_time;
+            for (size_t day = 0; day < DAY_NAMES.size(); day++) {
+                file << "| " << left << setw(day_width - 2) << "LUNCH BREAK";
+            }
+            file << "\n";
+            current_time = lunch_break_time + lunch_break_duration;
+            continue;
+        }
+
+        // Print regular time slots
+        int end_time = current_time + slot_durations[slot];
+        file << left << setw(time_width) << format_time_range(current_time, slot);
+
+        // Print each day's classes
+        for (size_t day = 0; day < DAY_NAMES.size(); day++) {
+            string entry;
+            if (tt.subject_id[day][slot] == -3) {
+                entry = find_lab_name(stream, day) + " (LAB) - " + tt.room[day][slot];
+            } else if (tt.subject_id[day][slot] == -1) {
+                entry = "FREE PERIOD";
+            } else {
+                int subj_idx = tt.subject_id[day][slot];
+                entry = subjects[stream][subj_idx].name + " (" + 
+                       subjects[stream][subj_idx].teacher + ") - " +
+                       tt.room[day][slot];
+            }
+            file << "| " << left << setw(day_width - 2) << entry;
+        }
+        file << "\n";
+        current_time = end_time + break_duration;
     }
 }

@@ -23,15 +23,26 @@ void TimetableGenerator::run() {
         initialize();
         generate_timetables();
         save_to_csv_column_wise();
-        save_to_txt_column_wise();
+        save_to_txt_column_wise();   // Full timetable
+        save_individual_section_timetables();  
         generate_teacher_timetables();
+        
         cout << "\nTimetables saved to:\n";
-        cout << "- 'timetables_column_wise.csv' (column-wise spreadsheet)\n";
-        cout << "- 'timetables_column_wise.txt' (column-wise format)\n";
+        cout << "- 'timetables_column_wise.csv' (spreadsheet format)\n";
+        cout << "- 'timetables_column_wise.txt' (full timetable)\n";
+        cout << "- Individual section timetables (e.g., cse_sectionA.txt)\n";
         cout << "- 'teacher_timetables.txt' (teacher schedules)\n";
     } catch (const exception& e) {
-        cerr << "Error: " << e.what() << endl;
-        exit(1);
+        cerr << "Error: " << e.what() << "\n";
+        cout << "Would you like to try again? (y/n): ";
+        char response;
+        cin >> response;
+        if (tolower(response) == 'y') {
+            run();
+        } else {
+            cout << "Exiting program...\n";
+            exit(1);
+        }
     }
 }
 
@@ -166,7 +177,7 @@ void TimetableGenerator::assign_regular_subjects(Timetable &tt, int stream_idx) 
             if (subject_already_on_day(tt, day, subject_idx)) continue;
 
             const string& teacher = subjects[stream_idx][subject_idx].teacher;
-            string room = "Room " + to_string(100 + (rand() % total_rooms));
+            string room = "Room " + to_string(1 + (rand() % total_rooms));  // Now rooms will be 1 to n
             
             bool teacher_available = true;
             // Check teacher availability
@@ -320,9 +331,24 @@ string TimetableGenerator::find_lab_name(int stream, int day) {
     }
 
     for (const Lab &lab : stream_labs[stream]) {
-        if (lab.day == day && !lab.name.empty()) {
-            return lab.name;
+        // Check if lab slot matches the day and also check if lab has a name
+        if (lab.day == day) {
+            if (!lab.name.empty()) {
+                return lab.name;
+            }
         }
     }
-    return "LAB_" + stream_names[stream];  // Default name if not found
+
+    // If no matching lab found or lab name is empty, create a default name with stream and section
+    string default_name = stream_names[stream] + "_LAB";
+    
+    // If there are labs configured for this stream, use the first lab's details
+    if (!stream_labs[stream].empty()) {
+        const Lab& first_lab = stream_labs[stream][0];
+        if (!first_lab.name.empty()) {
+            return first_lab.name;
+        }
+    }
+    
+    return default_name;
 }

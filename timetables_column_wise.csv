@@ -1,57 +1,30 @@
-Institution Type,College
+COLLEGE TIMETABLE
+
+Basic Information,
 Start Time,09:00
 Lunch Time,13:00
 Lunch Duration,60 minutes
 
-Stream:,cse
-Section:,A
+cse - Section A
 
-Time Slot,MONDAY,,TUESDAY,,WEDNESDAY,,THURSDAY,,FRIDAY,
-,Subject,Teacher,Room,,Subject,Teacher,Room,,Subject,Teacher,Room,,Subject,Teacher,Room,,Subject,Teacher,Room,
-09:00-09:55,"e","d","Room 100",,"w","s","Room 101",,FREE,,,,"w","s","Room 107",,FREE,,,
-10:00-10:55,FREE,,,,FREE,,,,"e","d","Room 106",,"q","a","Room 107",,FREE,,,
-11:00-11:55,FREE,,,,"r","f","Room 102",,FREE,,,,FREE,,,,FREE,,,
-12:00-12:55,"r","f","Room 100",,"e","d","Room 107",,"q","a","Room 102",,FREE,,,,"w","s","Room 109",
-13:00-14:00,LUNCH BREAK,,,,LUNCH BREAK,,,,LUNCH BREAK,,,,LUNCH BREAK,,,,LUNCH BREAK,,,
-14:00-14:55,FREE,,,,FREE,,,,FREE,,,,"r","f","Room 101",,"q","a","Room 102",
+Time,MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,
+09:00-09:55,FREE,awf [rwgf] awfr,q [a] Room 3,q [a] Room 3,e [d] Room 4,
+10:00-10:55,q [a] Room 9,awf [rwgf] awfr,e [d] Room 5,w [s] Room 8,FREE,
+11:00-11:55,FREE,awf [rwgf] awfr,w [s] Room 1,e [d] Room 1,FREE,
+12:00-12:55,FREE,FREE,FREE,FREE,w [s] Room 7,
 
 
-Stream:,cse
-Section:,B
+cse - Section B
 
-Time Slot,MONDAY,,TUESDAY,,WEDNESDAY,,THURSDAY,,FRIDAY,
-,Subject,Teacher,Room,,Subject,Teacher,Room,,Subject,Teacher,Room,,Subject,Teacher,Room,,Subject,Teacher,Room,
-09:00-09:55,FREE,,,,FREE,,,,"q","a","Room 102",,"e","d","Room 100",,FREE,,,
-10:00-10:55,"r","f","Room 105",,"r","f","Room 109",,"w","s","Room 105",,FREE,,,,"w","s","Room 101",
-11:00-11:55,"q","a","Room 103",,FREE,,,,FREE,,,,FREE,,,,FREE,,,
-12:00-12:55,"w","s","Room 107",,FREE,,,,FREE,,,,FREE,,,,"q","a","Room 107",
-13:00-14:00,LUNCH BREAK,,,,LUNCH BREAK,,,,LUNCH BREAK,,,,LUNCH BREAK,,,,LUNCH BREAK,,,
-14:00-14:55,"e","d","Room 100",,"e","d","Room 101",,"r","f","Room 102",,FREE,,,,FREE,,,
+Time,MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,
+09:00-09:55,w [s] Room 3,FREE,FREE,FREE,FREE,
+10:00-10:55,FREE,e [d] Room 6,awf [rwgf] awfr,e [d] Room 4,e [d] Room 10,
+11:00-11:55,FREE,q [a] Room 4,awf [rwgf] awfr,q [a] Room 8,w [s] Room 2,
+12:00-12:55,q [a] Room 9,w [s] Room 8,awf [rwgf] awfr,FREE,FREE,
 
 
-Stream:,ece
-Section:,A
 
-Time Slot,MONDAY,,TUESDAY,,WEDNESDAY,,THURSDAY,,FRIDAY,
-,Subject,Teacher,Room,,Subject,Teacher,Room,,Subject,Teacher,Room,,Subject,Teacher,Room,,Subject,Teacher,Room,
-09:00-09:55,FREE,,,,FREE,,,,FREE,,,,FREE,,,,FREE,,,
-10:00-10:55,FREE,,,,"o","k","Room 102",,FREE,,,,"o","k","Room 101",,"o","k","Room 105",
-11:00-11:55,FREE,,,,FREE,,,,"p","l","Room 101",,"p","l","Room 104",,"i","j","Room 106",
-12:00-12:55,FREE,,,,FREE,,,,FREE,,,,"i","j","Room 106",,"p","l","Room 101",
-13:00-14:00,LUNCH BREAK,,,,LUNCH BREAK,,,,LUNCH BREAK,,,,LUNCH BREAK,,,,LUNCH BREAK,,,
-14:00-14:55,FREE,,,,FREE,,,,"i","j","Room 108",,FREE,,,,FREE,,,
-
-
-Stream:,ece
-Section:,B
-
-Time Slot,MONDAY,,TUESDAY,,WEDNESDAY,,THURSDAY,,FRIDAY,
-,Subject,Teacher,Room,,Subject,Teacher,Room,,Subject,Teacher,Room,,Subject,Teacher,Room,,Subject,Teacher,Room,
-09:00-09:55,FREE,,,,FREE,,,,FREE,,,,FREE,,,,"o","k","Room 106",
-10:00-10:55,FREE,,,,FREE,,,,FREE,,,,FREE,,,,FREE,,,
-11:00-11:55,FREE,,,,"p","l","Room 104",,"i","j","Room 108",,FREE,,,,FREE,,,
-12:00-12:55,FREE,,,,"o","k","Room 105",,"o","k","Room 106",,"p","l","Room 109",,"i","j","Room 105",
-13:00-14:00,LUNCH BREAK,,,,LUNCH BREAK,,,,LUNCH BREAK,,,,LUNCH BREAK,,,,LUNCH BREAK,,,
-14:00-14:55,FREE,,,,FREE,,,,FREE,,,,"i","j","Room 102",,"p","l","Room 101",
-
-
+Notes:
+- Format: Subject [Teacher] Room
+- FREE: No class scheduled
+- LUNCH BREAK: Lunch period
