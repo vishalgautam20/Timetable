@@ -1,51 +1,177 @@
 TEACHER TIMETABLES
 ============================================================
 
-TEACHER: a
+TEACHER: BIDYA
 ------------------------------------------------------------
 DAY            TIME                ROOM           CLASS
 ------------------------------------------------------------
-MONDAY         10:00-10:55         Room 9         cse Sec A
-WEDNESDAY      09:00-09:55         Room 3         cse Sec A
-THURSDAY       09:00-09:55         Room 3         cse Sec A
-MONDAY         12:00-12:55         Room 9         cse Sec B
-TUESDAY        11:00-11:55         Room 4         cse Sec B
-THURSDAY       11:00-11:55         Room 8         cse Sec B
+MONDAY         10:00 AM-10:55 AM   Room 7         ARTIFICIAL INTELLIGENCE Sec A
+TUESDAY        02:00 PM-02:55 PM   Room 1         ARTIFICIAL INTELLIGENCE Sec A
+FRIDAY         03:00 PM-03:55 PM   Room 9         ARTIFICIAL INTELLIGENCE Sec A
 
 
-TEACHER: d
+TEACHER: CHITTOTOSH
 ------------------------------------------------------------
 DAY            TIME                ROOM           CLASS
 ------------------------------------------------------------
-WEDNESDAY      10:00-10:55         Room 5         cse Sec A
-THURSDAY       11:00-11:55         Room 1         cse Sec A
-FRIDAY         09:00-09:55         Room 4         cse Sec A
-TUESDAY        10:00-10:55         Room 6         cse Sec B
-THURSDAY       10:00-10:55         Room 4         cse Sec B
-FRIDAY         10:00-10:55         Room 10        cse Sec B
+WEDNESDAY      12:00 PM-12:55 PM   Room 6         ELECTRICAL Sec A
+THURSDAY       03:00 PM-03:55 PM   Room 5         ELECTRICAL Sec A
+FRIDAY         11:00 AM-11:55 AM   Room 6         ELECTRICAL Sec A
 
 
-TEACHER: rwgf
+TEACHER: ELECTRONICS
 ------------------------------------------------------------
 DAY            TIME                ROOM           CLASS
 ------------------------------------------------------------
-TUESDAY        09:00-09:55         awfr           cse Sec A
-TUESDAY        10:00-10:55         awfr           cse Sec A
-TUESDAY        11:00-11:55         awfr           cse Sec A
-WEDNESDAY      10:00-10:55         awfr           cse Sec B
-WEDNESDAY      11:00-11:55         awfr           cse Sec B
-WEDNESDAY      12:00-12:55         awfr           cse Sec B
+MONDAY         02:00 PM-02:55 PM   KANCHANA_KATTA VLSI Sec A
+MONDAY         03:00 PM-03:55 PM   KANCHANA_KATTA VLSI Sec A
+MONDAY         04:00 PM-04:55 PM   KANCHANA_KATTA VLSI Sec A
 
 
-TEACHER: s
+TEACHER: INUGANBI
 ------------------------------------------------------------
 DAY            TIME                ROOM           CLASS
 ------------------------------------------------------------
-WEDNESDAY      11:00-11:55         Room 1         cse Sec A
-THURSDAY       10:00-10:55         Room 8         cse Sec A
-FRIDAY         12:00-12:55         Room 7         cse Sec A
-MONDAY         09:00-09:55         Room 3         cse Sec B
-TUESDAY        12:00-12:55         Room 8         cse Sec B
-FRIDAY         11:00-11:55         Room 2         cse Sec B
+TUESDAY        12:00 PM-12:55 PM   Room 6         COMPUTER_SCIENCE Sec A
+THURSDAY       05:00 PM-05:55 PM   Room 7         COMPUTER_SCIENCE Sec A
+FRIDAY         11:00 AM-11:55 AM   Room 4         COMPUTER_SCIENCE Sec A
+
+
+TEACHER: KABITA
+------------------------------------------------------------
+DAY            TIME                ROOM           CLASS
+------------------------------------------------------------
+MONDAY         12:00 PM-12:55 PM   Room 9         ARTIFICIAL INTELLIGENCE Sec A
+WEDNESDAY      12:00 PM-12:55 PM   Room 5         ARTIFICIAL INTELLIGENCE Sec A
+FRIDAY         05:00 PM-05:55 PM   Room 9         ARTIFICIAL INTELLIGENCE Sec A
+
+
+TEACHER: KAMLESH
+------------------------------------------------------------
+DAY            TIME                ROOM           CLASS
+------------------------------------------------------------
+MONDAY         10:00 AM-10:55 AM   Room 9         COMPUTER_SCIENCE Sec A
+THURSDAY       03:00 PM-03:55 PM   Room 1         COMPUTER_SCIENCE Sec A
+FRIDAY         12:00 PM-12:55 PM   Room 7         COMPUTER_SCIENCE Sec A
+MONDAY         11:00 AM-11:55 AM   Room 4         ARTIFICIAL INTELLIGENCE Sec A
+THURSDAY       04:00 PM-04:55 PM   Room 2         ARTIFICIAL INTELLIGENCE Sec A
+FRIDAY         02:00 PM-02:55 PM   Room 7         ARTIFICIAL INTELLIGENCE Sec A
+
+
+TEACHER: KANCHANA_K
+------------------------------------------------------------
+DAY            TIME                ROOM           CLASS
+------------------------------------------------------------
+MONDAY         09:00 AM-09:55 AM   ELECTRONICS    ELECTRICAL Sec A
+MONDAY         10:00 AM-10:55 AM   ELECTRONICS    ELECTRICAL Sec A
+MONDAY         11:00 AM-11:55 AM   ELECTRONICS    ELECTRICAL Sec A
+
+
+TEACHER: MANAS
+------------------------------------------------------------
+DAY            TIME                ROOM           CLASS
+------------------------------------------------------------
+MONDAY         12:00 PM-12:55 PM   Room 4         ELECTRICAL Sec A
+THURSDAY       12:00 PM-12:55 PM   Room 8         ELECTRICAL Sec A
+FRIDAY         12:00 PM-12:55 PM   Room 5         ELECTRICAL Sec A
+MONDAY         10:00 AM-10:55 AM   Room 8         VLSI Sec A
+TUESDAY        11:00 AM-11:55 AM   Room 3         VLSI Sec A
+TUESDAY        02:00 PM-02:55 PM   Room 5         VLSI Sec A
+WEDNESDAY      10:00 AM-10:55 AM   Room 4         VLSI Sec A
+FRIDAY         04:00 PM-04:55 PM   Room 6         VLSI Sec A
+FRIDAY         05:00 PM-05:55 PM   Room 3         VLSI Sec A
+
+
+TEACHER: MOTILAAL
+------------------------------------------------------------
+DAY            TIME                ROOM           CLASS
+------------------------------------------------------------
+MONDAY         02:00 PM-02:55 PM   Room 9         COMPUTER_SCIENCE Sec A
+TUESDAY        05:00 PM-05:55 PM   Room 5         COMPUTER_SCIENCE Sec A
+THURSDAY       02:00 PM-02:55 PM   Room 8         COMPUTER_SCIENCE Sec A
+MONDAY         04:00 PM-04:55 PM   Room 8         ARTIFICIAL INTELLIGENCE Sec A
+TUESDAY        12:00 PM-12:55 PM   Room 8         ARTIFICIAL INTELLIGENCE Sec A
+THURSDAY       10:00 AM-10:55 AM   Room 7         ARTIFICIAL INTELLIGENCE Sec A
+
+
+TEACHER: N.SAHARIYA
+------------------------------------------------------------
+DAY            TIME                ROOM           CLASS
+------------------------------------------------------------
+TUESDAY        02:00 PM-02:55 PM   Room 9         COMPUTER_SCIENCE Sec A
+THURSDAY       11:00 AM-11:55 AM   Room 10        COMPUTER_SCIENCE Sec A
+FRIDAY         02:00 PM-02:55 PM   Room 10        COMPUTER_SCIENCE Sec A
+MONDAY         05:00 PM-05:55 PM   Room 5         ARTIFICIAL INTELLIGENCE Sec A
+TUESDAY        10:00 AM-10:55 AM   Room 9         ARTIFICIAL INTELLIGENCE Sec A
+THURSDAY       02:00 PM-02:55 PM   Room 9         ARTIFICIAL INTELLIGENCE Sec A
+
+
+TEACHER: NAGESH
+------------------------------------------------------------
+DAY            TIME                ROOM           CLASS
+------------------------------------------------------------
+TUESDAY        04:00 PM-04:55 PM   Room 10        VLSI Sec A
+WEDNESDAY      03:00 PM-03:55 PM   Room 1         VLSI Sec A
+THURSDAY       05:00 PM-05:55 PM   Room 5         VLSI Sec A
+
+
+TEACHER: RAMESH
+------------------------------------------------------------
+DAY            TIME                ROOM           CLASS
+------------------------------------------------------------
+TUESDAY        12:00 PM-12:55 PM   Room 5         ELECTRICAL Sec A
+THURSDAY       10:00 AM-10:55 AM   Room 6         ELECTRICAL Sec A
+FRIDAY         05:00 PM-05:55 PM   Room 4         ELECTRICAL Sec A
+MONDAY         12:00 PM-12:55 PM   Room 3         VLSI Sec A
+THURSDAY       04:00 PM-04:55 PM   Room 3         VLSI Sec A
+FRIDAY         11:00 AM-11:55 AM   Room 8         VLSI Sec A
+
+
+TEACHER: RANITA
+------------------------------------------------------------
+DAY            TIME                ROOM           CLASS
+------------------------------------------------------------
+FRIDAY         02:00 PM-02:55 PM   ELECTRONICS    ELECTRICAL Sec A
+FRIDAY         03:00 PM-03:55 PM   ELECTRONICS    ELECTRICAL Sec A
+FRIDAY         04:00 PM-04:55 PM   ELECTRONICS    ELECTRICAL Sec A
+
+
+TEACHER: RANTA
+------------------------------------------------------------
+DAY            TIME                ROOM           CLASS
+------------------------------------------------------------
+THURSDAY       09:00 AM-09:55 AM   ELECTRONICS    VLSI Sec A
+THURSDAY       10:00 AM-10:55 AM   ELECTRONICS    VLSI Sec A
+THURSDAY       11:00 AM-11:55 AM   ELECTRONICS    VLSI Sec A
+
+
+TEACHER: SHURU
+------------------------------------------------------------
+DAY            TIME                ROOM           CLASS
+------------------------------------------------------------
+MONDAY         09:00 AM-09:55 AM   Room 9         COMPUTER_SCIENCE Sec A
+WEDNESDAY      05:00 PM-05:55 PM   Room 7         COMPUTER_SCIENCE Sec A
+FRIDAY         09:00 AM-09:55 AM   Room 4         COMPUTER_SCIENCE Sec A
+
+
+TEACHER: SUBASIT_BORAH
+------------------------------------------------------------
+DAY            TIME                ROOM           CLASS
+------------------------------------------------------------
+MONDAY         04:00 PM-04:55 PM   Room 2         ELECTRICAL Sec A
+TUESDAY        11:00 AM-11:55 AM   Room 1         ELECTRICAL Sec A
+FRIDAY         09:00 AM-09:55 AM   Room 7         ELECTRICAL Sec A
+
+
+TEACHER: UTTAM
+------------------------------------------------------------
+DAY            TIME                ROOM           CLASS
+------------------------------------------------------------
+MONDAY         03:00 PM-03:55 PM   COMPUTER CENTERCOMPUTER_SCIENCE Sec A
+MONDAY         04:00 PM-04:55 PM   COMPUTER CENTERCOMPUTER_SCIENCE Sec A
+MONDAY         05:00 PM-05:55 PM   COMPUTER CENTERCOMPUTER_SCIENCE Sec A
+TUESDAY        03:00 PM-03:55 PM   COMPUTER CENTERARTIFICIAL INTELLIGENCE Sec A
+TUESDAY        04:00 PM-04:55 PM   COMPUTER CENTERARTIFICIAL INTELLIGENCE Sec A
+TUESDAY        05:00 PM-05:55 PM   COMPUTER CENTERARTIFICIAL INTELLIGENCE Sec A
 
 

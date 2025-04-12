@@ -1,29 +1,71 @@
 COLLEGE TIMETABLE
 ================
 
-Start Time: 09:00
-Lunch Time: 13:00 (60 mins)
+Start Time: 09:00 AM
+Lunch Time: 01:00 PM (60 mins)
 
-STREAM: cse - SECTION A
+STREAM: COMPUTER_SCIENCE - SECTION A
 ============================================================
 
 TIME          | MONDAY                      | TUESDAY                     | WEDNESDAY                   | THURSDAY                    | FRIDAY                      
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-09:00-09:55   | FREE PERIOD                 | awf (LAB) - awfr            | q (a) - Room 3              | q (a) - Room 3              | e (d) - Room 4              
-10:00-10:55   | q (a) - Room 9              | awf (LAB) - awfr            | e (d) - Room 5              | w (s) - Room 8              | FREE PERIOD                 
-11:00-11:55   | FREE PERIOD                 | awf (LAB) - awfr            | w (s) - Room 1              | e (d) - Room 1              | FREE PERIOD                 
-12:00-12:55   | FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 | w (s) - Room 7              
+09:00 AM-09:55 AM| COMPUTER GRAPHICS (SHURU) - Room 9| FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 | COMPUTER GRAPHICS (SHURU) - Room 4
+10:00 AM-10:55 AM| OPTIMIZATION  (KAMLESH) - Room 9| FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 
+11:00 AM-11:55 AM| FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 | NATURAL LANGUAGE (N.SAHARIYA) - Room 10| STATISTICAL ML (INUGANBI) - Room 4
+12:00 PM-12:55 PM| FREE PERIOD                 | STATISTICAL ML (INUGANBI) - Room 6| FREE PERIOD                 | FREE PERIOD                 | OPTIMIZATION  (KAMLESH) - Room 7
+01:00 PM-02:00 PM| LUNCH BREAK                 | LUNCH BREAK                 | LUNCH BREAK                 | LUNCH BREAK                 | LUNCH BREAK                 
+02:00 PM-02:55 PM| CYBER_SECURITY (MOTILAAL) - Room 9| NATURAL LANGUAGE (N.SAHARIYA) - Room 9| FREE PERIOD                 | CYBER_SECURITY (MOTILAAL) - Room 8| NATURAL LANGUAGE (N.SAHARIYA) - Room 10
+03:00 PM-03:55 PM| GRAPHICS (LAB) - COMPUTER CENTER| FREE PERIOD                 | FREE PERIOD                 | OPTIMIZATION  (KAMLESH) - Room 1| FREE PERIOD                 
+04:00 PM-04:55 PM| GRAPHICS (LAB) - COMPUTER CENTER| FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 
+05:00 PM-05:55 PM| GRAPHICS (LAB) - COMPUTER CENTER| CYBER_SECURITY (MOTILAAL) - Room 5| COMPUTER GRAPHICS (SHURU) - Room 7| STATISTICAL ML (INUGANBI) - Room 7| FREE PERIOD                 
 
 
-STREAM: cse - SECTION B
+STREAM: ARTIFICIAL INTELLIGENCE - SECTION A
 ============================================================
 
 TIME          | MONDAY                      | TUESDAY                     | WEDNESDAY                   | THURSDAY                    | FRIDAY                      
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-09:00-09:55   | w (s) - Room 3              | FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 
-10:00-10:55   | FREE PERIOD                 | e (d) - Room 6              | awf (LAB) - awfr            | e (d) - Room 4              | e (d) - Room 10             
-11:00-11:55   | FREE PERIOD                 | q (a) - Room 4              | awf (LAB) - awfr            | q (a) - Room 8              | w (s) - Room 2              
-12:00-12:55   | q (a) - Room 9              | w (s) - Room 8              | awf (LAB) - awfr            | FREE PERIOD                 | FREE PERIOD                 
+09:00 AM-09:55 AM| FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 
+10:00 AM-10:55 AM| COMPUTER_GRAPHICS (BIDYA) - Room 7| NATURAL LANGUAGE (N.SAHARIYA) - Room 9| FREE PERIOD                 | CYBER_SECURITY (MOTILAAL) - Room 7| FREE PERIOD                 
+11:00 AM-11:55 AM| OPTIMIZATION (KAMLESH) - Room 4| FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 
+12:00 PM-12:55 PM| MACHINE LEARNING (KABITA) - Room 9| CYBER_SECURITY (MOTILAAL) - Room 8| MACHINE LEARNING (KABITA) - Room 5| FREE PERIOD                 | FREE PERIOD                 
+01:00 PM-02:00 PM| LUNCH BREAK                 | LUNCH BREAK                 | LUNCH BREAK                 | LUNCH BREAK                 | LUNCH BREAK                 
+02:00 PM-02:55 PM| FREE PERIOD                 | COMPUTER_GRAPHICS (BIDYA) - Room 1| FREE PERIOD                 | NATURAL LANGUAGE (N.SAHARIYA) - Room 9| OPTIMIZATION (KAMLESH) - Room 7
+03:00 PM-03:55 PM| FREE PERIOD                 | GRAPHICS (LAB) - COMPUTER CENTER| FREE PERIOD                 | FREE PERIOD                 | COMPUTER_GRAPHICS (BIDYA) - Room 9
+04:00 PM-04:55 PM| CYBER_SECURITY (MOTILAAL) - Room 8| GRAPHICS (LAB) - COMPUTER CENTER| FREE PERIOD                 | OPTIMIZATION (KAMLESH) - Room 2| FREE PERIOD                 
+05:00 PM-05:55 PM| NATURAL LANGUAGE (N.SAHARIYA) - Room 5| GRAPHICS (LAB) - COMPUTER CENTER| FREE PERIOD                 | FREE PERIOD                 | MACHINE LEARNING (KABITA) - Room 9
+
+
+STREAM: ELECTRICAL - SECTION A
+============================================================
+
+TIME          | MONDAY                      | TUESDAY                     | WEDNESDAY                   | THURSDAY                    | FRIDAY                      
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+09:00 AM-09:55 AM| EMBEDDED_SYSTEM (LAB) - ELECTRONICS| FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 | MICROWAVE (SUBASIT_BORAH) - Room 7
+10:00 AM-10:55 AM| EMBEDDED_SYSTEM (LAB) - ELECTRONICS| FREE PERIOD                 | FREE PERIOD                 | INFORMATION_THEORY (RAMESH) - Room 6| FREE PERIOD                 
+11:00 AM-11:55 AM| EMBEDDED_SYSTEM (LAB) - ELECTRONICS| MICROWAVE (SUBASIT_BORAH) - Room 1| FREE PERIOD                 | FREE PERIOD                 | COMMUNICATION_N (CHITTOTOSH) - Room 6
+12:00 PM-12:55 PM| EMBEDDED_SYSTEM (MANAS) - Room 4| INFORMATION_THEORY (RAMESH) - Room 5| COMMUNICATION_N (CHITTOTOSH) - Room 6| EMBEDDED_SYSTEM (MANAS) - Room 8| EMBEDDED_SYSTEM (MANAS) - Room 5
+01:00 PM-02:00 PM| LUNCH BREAK                 | LUNCH BREAK                 | LUNCH BREAK                 | LUNCH BREAK                 | LUNCH BREAK                 
+02:00 PM-02:55 PM| FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 | MICROWAVE (LAB) - ELECTRONICS
+03:00 PM-03:55 PM| FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 | COMMUNICATION_N (CHITTOTOSH) - Room 5| MICROWAVE (LAB) - ELECTRONICS
+04:00 PM-04:55 PM| MICROWAVE (SUBASIT_BORAH) - Room 2| FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 | MICROWAVE (LAB) - ELECTRONICS
+05:00 PM-05:55 PM| FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 | INFORMATION_THEORY (RAMESH) - Room 4
+
+
+STREAM: VLSI - SECTION A
+============================================================
+
+TIME          | MONDAY                      | TUESDAY                     | WEDNESDAY                   | THURSDAY                    | FRIDAY                      
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+09:00 AM-09:55 AM| FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 | EMBEDDED_SYSTEM (LAB) - ELECTRONICS| FREE PERIOD                 
+10:00 AM-10:55 AM| EMBEDDED_SYSTEM (MANAS) - Room 8| FREE PERIOD                 | VLSI TECH (MANAS) - Room 4  | EMBEDDED_SYSTEM (LAB) - ELECTRONICS| FREE PERIOD                 
+11:00 AM-11:55 AM| FREE PERIOD                 | VLSI TECH (MANAS) - Room 3  | FREE PERIOD                 | EMBEDDED_SYSTEM (LAB) - ELECTRONICS| INFORMATION_THEORY (RAMESH) - Room 8
+12:00 PM-12:55 PM| INFORMATION_THEORY (RAMESH) - Room 3| FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 
+01:00 PM-02:00 PM| LUNCH BREAK                 | LUNCH BREAK                 | LUNCH BREAK                 | LUNCH BREAK                 | LUNCH BREAK                 
+02:00 PM-02:55 PM| VERILOG_DESIGN (LAB) - KANCHANA_KATTA| EMBEDDED_SYSTEM (MANAS) - Room 5| FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 
+03:00 PM-03:55 PM| VERILOG_DESIGN (LAB) - KANCHANA_KATTA| FREE PERIOD                 | HDL (NAGESH) - Room 1       | FREE PERIOD                 | FREE PERIOD                 
+04:00 PM-04:55 PM| VERILOG_DESIGN (LAB) - KANCHANA_KATTA| HDL (NAGESH) - Room 10      | FREE PERIOD                 | INFORMATION_THEORY (RAMESH) - Room 3| EMBEDDED_SYSTEM (MANAS) - Room 6
+05:00 PM-05:55 PM| FREE PERIOD                 | FREE PERIOD                 | FREE PERIOD                 | HDL (NAGESH) - Room 5       | VLSI TECH (MANAS) - Room 3  
 
 
 

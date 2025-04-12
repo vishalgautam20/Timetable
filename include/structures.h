@@ -6,11 +6,20 @@
 
 using namespace std;
 
+// Forward declarations
+struct Subject;
+struct Lab;
+struct Timetable;
+
+// Define Subject first since it's used by others
 struct Subject {
     string name;
     string teacher;
+    int credits;
+    bool is_elective;
 };
 
+// Define Lab next
 struct Lab {
     string name;
     string center;
@@ -20,6 +29,7 @@ struct Lab {
     int start_slot = -1;
 };
 
+// Define Timetable
 struct Timetable {
     vector<vector<int>> subject_id;
     vector<vector<string>> teacher;

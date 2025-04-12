@@ -8,30 +8,16 @@
 
 using namespace std;
 
-string format_time(int minutes) {
-    int hours = minutes / 60;
-    int mins = minutes % 60;
-    stringstream ss;
-    ss << setfill('0') << setw(2) << hours << ":" 
-       << setfill('0') << setw(2) << mins;
-    return ss.str();
-}
-
-
 void TimetableGenerator::run() {
     try {
         initialize();
         generate_timetables();
-        save_to_csv_column_wise();
-        save_to_txt_column_wise();   // Full timetable
-        save_individual_section_timetables();  
         generate_teacher_timetables();
+        save_to_txt_column_wise();
+        save_to_csv_column_wise();
+        save_individual_section_timetables();
         
-        cout << "\nTimetables saved to:\n";
-        cout << "- 'timetables_column_wise.csv' (spreadsheet format)\n";
-        cout << "- 'timetables_column_wise.txt' (full timetable)\n";
-        cout << "- Individual section timetables (e.g., cse_sectionA.txt)\n";
-        cout << "- 'teacher_timetables.txt' (teacher schedules)\n";
+        cout << "\nTimetables saved successfully\n";
     } catch (const exception& e) {
         cerr << "Error: " << e.what() << "\n";
         cout << "Would you like to try again? (y/n): ";
